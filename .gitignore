@@ -1,0 +1,5 @@
+**/.env
+**/localtemp
+**/node_modules
+**/yarn.lock
+**/*.log
