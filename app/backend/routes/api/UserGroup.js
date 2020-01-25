@@ -1,7 +1,8 @@
 const UserGroupModel = require('../../models/UserGroup').model;
 const router = require ('express').Router();
 const validator = require('../../validations/userGroupValidation');
-const { checkAuth, checkAdmin } = require('../../middleware/check-auth');
+const checkAuth = require('../../middleware/check-auth');
+const checkAdmin = require('../../middleware/check-admin')
 
 /* GET A GROUP */
 router.get('/:id', checkAuth, (req, res) => {

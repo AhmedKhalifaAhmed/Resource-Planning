@@ -2,7 +2,7 @@ const UserModel = require('../../models/User').model;
 const userValidator = require('../../validations/userValidation');
 const UserGroupModel = require('../../models/UserGroup').model;
 const router = require ('express').Router();
-const { checkAuth, checkAdmin } = require('../../middleware/check-auth');
+const checkAdmin = require('../../middleware/check-admin');
 const validator = require('../../validations/authValidation');
 const authFunctions = require('../../functions/auth');
 
